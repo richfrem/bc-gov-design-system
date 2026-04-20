@@ -1,0 +1,27 @@
+{
+    "name": "bc-gov-design-system",
+    "version": "1.0.0",
+    "description": "BC Government Design System plugin providing official design tokens, component patterns, and usage rules for building WCAG 2.1 AA compliant BC Government digital services.",
+    "author": {
+        "name": "Richard Fremmerlid"
+    },
+    "repository": "https://github.com/richfrem/claude-design-bc-gov-design-system",
+    "license": "MIT (plugin code); BC Sans font files © Province of British Columbia — see assets/fonts/LICENSE; BC logo © Province of British Columbia",
+    "upstream": "https://github.com/bcgov/design-system",
+    "keywords": [
+        "bc-government",
+        "design-system",
+        "bc-sans",
+        "wcag",
+        "accessibility",
+        "government-ui"
+    ],
+    "capabilities": [
+        "ui-generation",
+        "design-tokens",
+        "accessibility-compliance"
+    ],
+    "skills": [
+        "skills/bc-gov-design-system"
+    ]
+}

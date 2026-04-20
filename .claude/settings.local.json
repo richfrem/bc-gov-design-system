@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/RICHFREM/.claude/**)",
+      "Bash(mkdir -p /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/evals)",
+      "Bash(mkdir -p /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/references)",
+      "Bash(mkdir -p /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/assets)",
+      "Bash(cp /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/README.md /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/plugins/bc-gov-design-system/README.md)",
+      "Bash(cp /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/SKILL.md /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/plugins/bc-gov-design-system/skills/bc-gov-design-system/SKILL.md)",
+      "Bash(cp /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/evals/evals.json /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/plugins/bc-gov-design-system/skills/bc-gov-design-system/evals/evals.json)",
+      "Bash(cp /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/references/REFERENCE.md /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/plugins/bc-gov-design-system/skills/bc-gov-design-system/references/REFERENCE.md)",
+      "Bash(cp /c/Users/RICHFREM/source/repos/agent-plugins-skills/plugins/bc-gov-design-system/skills/bc-gov-design-system/references/acceptance-criteria.md /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/plugins/bc-gov-design-system/skills/bc-gov-design-system/references/acceptance-criteria.md)",
+      "Skill(agent-scaffolders:manage-marketplace)",
+      "Bash(python /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/skills/symlink-manager/scripts/symlink_manager.py diagnose)",
+      "Bash(git -C /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system config core.symlinks true)",
+      "Bash(python /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/skills/symlink-manager/scripts/symlink_manager.py create --src bc-design-system/fonts/__TRACKED_VAR__ --dst plugins/bc-gov-design-system/assets/fonts/__TRACKED_VAR__)",
+      "Bash(python /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/skills/symlink-manager/scripts/symlink_manager.py create --src bc-design-system/assets/bc-logo.png --dst plugins/bc-gov-design-system/assets/icons/bc-logo.png)",
+      "Bash(python /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/skills/symlink-manager/scripts/symlink_manager.py create --src plugins/bc-gov-design-system/assets/colors_and_type.css --dst plugins/bc-gov-design-system/skills/bc-gov-design-system/assets/colors_and_type.css)",
+      "Bash(python /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/skills/symlink-manager/scripts/symlink_manager.py create --src plugins/bc-gov-design-system/assets/fonts/__TRACKED_VAR__ --dst plugins/bc-gov-design-system/skills/bc-gov-design-system/assets/fonts/__TRACKED_VAR__)",
+      "Bash(python /c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/skills/symlink-manager/scripts/symlink_manager.py create --src plugins/bc-gov-design-system/assets/icons/bc-logo.png --dst plugins/bc-gov-design-system/skills/bc-gov-design-system/assets/icons/bc-logo.png)",
+      "Bash(uvx --from git+https://github.com/richfrem/agent-plugins-skills plugin-add plugins/)",
+      "Read(//c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents//**)",
+      "Read(//c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/**)",
+      "Bash(python3 *)",
+      "Bash(python *)"
+    ]
+  }
+}
