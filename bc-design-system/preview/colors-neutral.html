@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; padding: 20px; font-family: var(--font-primary); }
+.row { display: flex; gap: 2px; margin-bottom: 2px; }
+.swatch { flex: 1; height: 72px; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; }
+.swatch span { font-size: 11px; font-weight: 700; }
+.swatch small { font-size: 10px; font-weight: 400; }
+.group-label { font-size: 11px; color: #474543; margin: 10px 0 4px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+</style></head><body>
+<div class="group-label">Text / Typography</div>
+<div class="row">
+  <div class="swatch" style="background:#2D2D2D;color:#fff"><span>Primary text</span><small>#2D2D2D</small></div>
+  <div class="swatch" style="background:#474543;color:#fff"><span>Secondary text</span><small>#474543</small></div>
+  <div class="swatch" style="background:#9F9D9C;color:#fff"><span>Placeholder</span><small>#9F9D9C</small></div>
+</div>
+<div class="group-label">Surfaces</div>
+<div class="row">
+  <div class="swatch" style="background:#FFFFFF;color:#2D2D2D;border:1px solid #D8D8D8"><span>White</span><small>#FFFFFF</small></div>
+  <div class="swatch" style="background:#FAFAF8;color:#2D2D2D;border:1px solid #D8D8D8"><span>Surface default</span><small>#FAFAF8</small></div>
+  <div class="swatch" style="background:#EDEBE9;color:#2D2D2D"><span>Surface hover</span><small>#EDEBE9</small></div>
+  <div class="swatch" style="background:#E0DEDC;color:#2D2D2D"><span>Surface pressed</span><small>#E0DEDC</small></div>
+  <div class="swatch" style="background:#D8D8D8;color:#2D2D2D"><span>Border</span><small>#D8D8D8</small></div>
+</div>
+<div class="row">
+  <div class="swatch" style="background:#252423;color:#fff"><span>Dark surface</span><small>#252423</small></div>
+  <div class="swatch" style="background:#FBD389;color:#2D2D2D"><span>Indigenous accent</span><small>#FBD389</small></div>
+</div>
+</body></html>

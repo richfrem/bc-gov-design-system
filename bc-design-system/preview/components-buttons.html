@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; padding: 20px 24px; font-family: var(--font-primary); }
+.group-label { font-size: 11px; color: #474543; margin: 14px 0 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+button { font-family: var(--font-primary); cursor: pointer; border: none; border-radius: 4px; font-size: 14px; line-height: 1; }
+
+/* Primary */
+.btn-primary { background: #013366; color: #fff; padding: 8px 16px; font-weight: 700; }
+.btn-primary:hover { background: #1E5189; }
+.btn-primary.lg { padding: 12px 24px; font-size: 16px; }
+.btn-primary.sm { padding: 5px 12px; font-size: 14px; }
+.btn-primary.xs { padding: 3px 8px; font-size: 12px; }
+.btn-primary.disabled { background: #EDEBE9; color: #9F9D9C; cursor: not-allowed; }
+
+/* Secondary */
+.btn-secondary { background: #fff; color: #013366; border: 1px solid #D8D8D8; padding: 8px 16px; font-weight: 700; font-size: 14px; }
+.btn-secondary:hover { background: #EDEBE9; }
+.btn-secondary.disabled { background: #EDEBE9; color: #9F9D9C; border-color: #D8D8D8; cursor: not-allowed; }
+
+/* Tertiary */
+.btn-tertiary { background: transparent; color: #013366; padding: 8px 16px; font-weight: 700; font-size: 14px; }
+.btn-tertiary:hover { background: #EDEBE9; }
+.btn-tertiary.disabled { color: #9F9D9C; cursor: not-allowed; }
+
+/* Link */
+.btn-link { background: transparent; color: #255A90; padding: 8px 0; font-size: 14px; text-decoration: underline; }
+.btn-link.disabled { color: #9F9D9C; cursor: not-allowed; text-decoration: underline; }
+
+/* Danger */
+.btn-danger-primary { background: #CE3E39; color: #fff; padding: 8px 16px; font-weight: 700; font-size: 14px; border-radius: 4px; }
+.btn-danger-secondary { background: #fff; color: #CE3E39; border: 1px solid #CE3E39; padding: 8px 16px; font-weight: 700; font-size: 14px; border-radius: 4px; }
+
+.size-tag { font-size: 10px; color: #9F9D9C; align-self: center; }
+</style></head><body>
+<div class="group-label">Primary</div>
+<div class="row">
+  <button class="btn-primary lg">Action</button>
+  <button class="btn-primary">Action</button>
+  <button class="btn-primary sm">Action</button>
+  <button class="btn-primary xs">Action</button>
+  <button class="btn-primary disabled">Disabled</button>
+</div>
+
+<div class="group-label">Secondary</div>
+<div class="row">
+  <button class="btn-secondary" style="font-size:16px;padding:10px 24px">Action</button>
+  <button class="btn-secondary">Action</button>
+  <button class="btn-secondary disabled">Disabled</button>
+</div>
+
+<div class="group-label">Tertiary</div>
+<div class="row">
+  <button class="btn-tertiary" style="font-size:16px;padding:10px 24px">Action</button>
+  <button class="btn-tertiary">Action</button>
+  <button class="btn-tertiary disabled">Disabled</button>
+</div>
+
+<div class="group-label">Link</div>
+<div class="row">
+  <button class="btn-link">Action</button>
+  <button class="btn-link disabled">Disabled</button>
+</div>
+
+<div class="group-label">Danger variants</div>
+<div class="row">
+  <button class="btn-danger-primary">Delete</button>
+  <button class="btn-danger-secondary">Delete</button>
+</div>
+</body></html>

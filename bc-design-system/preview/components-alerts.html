@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; padding: 20px 24px; font-family: var(--font-primary); }
+.alert { display: flex; align-items: flex-start; gap: 12px; padding: 16px; border-radius: 4px; margin-bottom: 10px; border: 1px solid; }
+.alert-icon { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; margin-top: 1px; }
+.alert-body .title { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+.alert-body .desc { font-size: 14px; }
+
+/* Info */
+.alert-info { background: #D8EAFD; border-color: #2E5DD7; }
+.alert-info .alert-icon { background: #2E5DD7; color: #fff; }
+.alert-info .title { color: #013366; }
+.alert-info .desc { color: #255A90; }
+
+/* Success */
+.alert-success { background: #F6FFF8; border-color: #42814A; }
+.alert-success .alert-icon { background: #42814A; color: #fff; }
+.alert-success .title { color: #2D2D2D; }
+.alert-success .desc { color: #474543; }
+
+/* Warning */
+.alert-warning { background: #FEF1D8; border-color: #F8BB47; }
+.alert-warning .alert-icon { background: #F8BB47; color: #2D2D2D; }
+.alert-warning .title { color: #2D2D2D; }
+.alert-warning .desc { color: #474543; }
+
+/* Danger */
+.alert-danger { background: #F4E1E2; border-color: #CE3E39; }
+.alert-danger .alert-icon { background: #CE3E39; color: #fff; }
+.alert-danger .title { color: #CE3E39; }
+.alert-danger .desc { color: #474543; }
+</style></head><body>
+<div class="alert alert-info">
+  <div class="alert-icon">i</div>
+  <div class="alert-body">
+    <div class="title">Information</div>
+    <div class="desc">This is an informational message for the user.</div>
+  </div>
+</div>
+<div class="alert alert-success">
+  <div class="alert-icon">✓</div>
+  <div class="alert-body">
+    <div class="title">Success</div>
+    <div class="desc">Your changes have been saved successfully.</div>
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div class="alert-icon">!</div>
+  <div class="alert-body">
+    <div class="title">Warning</div>
+    <div class="desc">Please review before proceeding.</div>
+  </div>
+</div>
+<div class="alert alert-danger">
+  <div class="alert-icon">✕</div>
+  <div class="alert-body">
+    <div class="title">Error</div>
+    <div class="desc">There was a problem completing your request.</div>
+  </div>
+</div>
+</body></html>

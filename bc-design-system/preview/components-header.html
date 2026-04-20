@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #f0eeec; padding: 16px; font-family: var(--font-primary); display: flex; flex-direction: column; gap: 12px; }
+.header-wrap { background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.10); }
+.header { height: 54px; background: #fff; border-bottom: 1px solid #D8D8D8; display: flex; align-items: center; padding: 0 24px; justify-content: space-between; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.logo { height: 36px; }
+.divider { width: 1px; height: 32px; background: #D8D8D8; }
+.site-title { font-size: 20px; font-weight: 700; color: #2D2D2D; }
+.header-right { display: flex; gap: 16px; align-items: center; }
+.nav-link { font-size: 14px; color: #2D2D2D; text-decoration: none; cursor: pointer; }
+.nav-link:hover { text-decoration: underline; }
+.subheader { height: 40px; background: #fff; border-bottom: 1px solid #D8D8D8; display: flex; align-items: center; padding: 0 24px; gap: 0; }
+.sub-link { font-size: 14px; color: #2D2D2D; padding: 0 16px; height: 40px; display: flex; align-items: center; text-decoration: none; cursor: pointer; border-right: 1px solid #D8D8D8; }
+.sub-link:first-child { padding-left: 0; }
+.sub-link:hover { background: #FAFAF8; }
+.label { font-size: 10px; color: #9F9D9C; margin-bottom: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+</style></head><body>
+<div class="label">Without subheader</div>
+<div class="header-wrap">
+  <div class="header">
+    <div class="header-left">
+      <img class="logo" src="../assets/bc-logo.png" alt="BC Logo">
+      <div class="divider"></div>
+      <span class="site-title">Service title</span>
+    </div>
+    <div class="header-right">
+      <span class="nav-link">Sign in</span>
+    </div>
+  </div>
+</div>
+<div class="label">With subheader navigation</div>
+<div class="header-wrap">
+  <div class="header">
+    <div class="header-left">
+      <img class="logo" src="../assets/bc-logo.png" alt="BC Logo">
+      <div class="divider"></div>
+      <span class="site-title">Service title</span>
+    </div>
+    <div class="header-right">
+      <span class="nav-link">Sign in</span>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="sub-link">Link 1</span>
+    <span class="sub-link">Link 2</span>
+    <span class="sub-link">Link 3</span>
+    <span class="sub-link">Link 4</span>
+    <span class="sub-link">Link 5</span>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; padding: 20px 24px; font-family: var(--font-primary); }
+.group-label { font-size: 11px; color: #474543; margin: 12px 0 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.token-row { display: flex; align-items: center; gap: 12px; padding: 4px 0; }
+.bar { background: #013366; height: 16px; border-radius: 2px; flex-shrink: 0; }
+.token-name { font-size: 11px; color: #9F9D9C; width: 60px; }
+.token-val { font-size: 11px; color: #2D2D2D; font-weight: 700; }
+.radii { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.radius-box { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.radius-sq { width: 48px; height: 48px; background: #FAFAF8; border: 1px solid #D8D8D8; }
+.rl { font-size: 10px; color: #9F9D9C; }
+.shadow-row { display: flex; gap: 16px; }
+.shadow-box { width: 80px; height: 48px; background: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #9F9D9C; }
+</style></head><body>
+<div class="group-label">Spacing scale</div>
+<div class="token-row"><div class="token-name">--space-1</div><div class="bar" style="width:4px"></div><div class="token-val">4px</div></div>
+<div class="token-row"><div class="token-name">--space-2</div><div class="bar" style="width:8px"></div><div class="token-val">8px</div></div>
+<div class="token-row"><div class="token-name">--space-3</div><div class="bar" style="width:12px"></div><div class="token-val">12px</div></div>
+<div class="token-row"><div class="token-name">--space-4</div><div class="bar" style="width:16px"></div><div class="token-val">16px</div></div>
+<div class="token-row"><div class="token-name">--space-5</div><div class="bar" style="width:24px"></div><div class="token-val">24px</div></div>
+<div class="token-row"><div class="token-name">--space-6</div><div class="bar" style="width:32px"></div><div class="token-val">32px</div></div>
+<div class="token-row"><div class="token-name">--space-7</div><div class="bar" style="width:48px"></div><div class="token-val">48px</div></div>
+<div class="token-row"><div class="token-name">--space-8</div><div class="bar" style="width:64px"></div><div class="token-val">64px</div></div>
+<div class="token-row"><div class="token-name">--space-10</div><div class="bar" style="width:96px"></div><div class="token-val">96px</div></div>
+
+<div class="group-label">Border radius</div>
+<div class="radii">
+  <div class="radius-box"><div class="radius-sq" style="border-radius:4px"></div><div class="rl">4px · sm</div></div>
+  <div class="radius-box"><div class="radius-sq" style="border-radius:8px"></div><div class="rl">8px · md</div></div>
+  <div class="radius-box"><div class="radius-sq" style="border-radius:24px"></div><div class="rl">24px · lg</div></div>
+  <div class="radius-box"><div class="radius-sq" style="border-radius:999px"></div><div class="rl">999px · full</div></div>
+</div>
+
+<div class="group-label">Shadows</div>
+<div class="shadow-row">
+  <div class="shadow-box" style="box-shadow:0 1px 2px rgba(0,0,0,0.10)">sm</div>
+  <div class="shadow-box" style="box-shadow:0 1px 4px rgba(0,0,0,0.13),0 1px 2px rgba(0,0,0,0.10)">md</div>
+</div>
+</body></html>

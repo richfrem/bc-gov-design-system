@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; padding: 20px 24px; font-family: var(--font-primary); }
+.group-label { font-size: 11px; color: #474543; margin: 10px 0 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.tag { display: inline-flex; align-items: center; gap: 4px; border-radius: 4px; font-size: 12px; font-weight: 700; padding: 2px 8px; font-family: var(--font-secondary, 'Roboto', sans-serif); }
+.tag-gray { background: #EDEBE9; color: #474543; border: 1px solid #D8D8D8; }
+.tag-blue { background: #D8EAFD; color: #013366; border: 1px solid #2E5DD7; }
+.tag-green { background: #F6FFF8; color: #42814A; border: 1px solid #42814A; }
+.tag-yellow { background: #FEF1D8; color: #2D2D2D; border: 1px solid #F8BB47; }
+.tag-red { background: #F4E1E2; color: #CE3E39; border: 1px solid #CE3E39; }
+.tag-close { background: none; border: none; cursor: pointer; font-size: 12px; color: inherit; padding: 0; line-height: 1; }
+.tag-lg { font-size: 14px; padding: 4px 12px; }
+.tag-sm { font-size: 11px; padding: 1px 6px; }
+</style></head><body>
+<div class="group-label">Default sizes</div>
+<div class="row">
+  <span class="tag tag-gray tag-lg">Large tag</span>
+  <span class="tag tag-gray">Default tag</span>
+  <span class="tag tag-gray tag-sm">Small tag</span>
+</div>
+<div class="group-label">Colour variants</div>
+<div class="row">
+  <span class="tag tag-gray">Gray</span>
+  <span class="tag tag-blue">Blue</span>
+  <span class="tag tag-green">Green</span>
+  <span class="tag tag-yellow">Yellow</span>
+  <span class="tag tag-red">Red</span>
+</div>
+<div class="group-label">With close button</div>
+<div class="row">
+  <span class="tag tag-gray">Category <button class="tag-close">×</button></span>
+  <span class="tag tag-blue">Status <button class="tag-close">×</button></span>
+  <span class="tag tag-green">Approved <button class="tag-close">×</button></span>
+</div>
+</body></html>

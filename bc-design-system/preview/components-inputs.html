@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; padding: 20px 24px; font-family: var(--font-primary); }
+.group-label { font-size: 11px; color: #474543; margin: 12px 0 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.field { margin-bottom: 12px; max-width: 320px; }
+label { display: block; font-size: 14px; font-weight: 700; color: #2D2D2D; margin-bottom: 4px; }
+.hint { font-size: 12px; color: #474543; margin-bottom: 4px; }
+input[type=text], input[type=email], select, textarea {
+  display: block; width: 100%; font-family: var(--font-primary);
+  font-size: 14px; color: #2D2D2D;
+  border: 2px solid #2D2D2D; border-radius: 4px;
+  padding: 8px 12px; background: #fff;
+}
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+  outline: none; border-color: #2E5DD7;
+}
+input.error { border-color: #CE3E39; }
+.error-msg { font-size: 12px; color: #CE3E39; margin-top: 4px; }
+.field-row { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.checkbox-group label { display: flex; align-items: center; gap: 8px; font-weight: 400; margin-bottom: 4px; }
+input[type=checkbox] { width: 18px; height: 18px; accent-color: #013366; }
+input[type=radio] { width: 18px; height: 18px; accent-color: #013366; }
+</style></head><body>
+<div class="field-row">
+  <div class="field">
+    <label>Text input</label>
+    <div class="hint">Helper text</div>
+    <input type="text" placeholder="Placeholder text">
+  </div>
+  <div class="field">
+    <label>Error state</label>
+    <div class="hint">Hint text</div>
+    <input type="text" class="error" value="Invalid entry">
+    <div class="error-msg">This field is required</div>
+  </div>
+</div>
+<div class="field-row">
+  <div class="field">
+    <label>Select</label>
+    <select><option>Choose an option</option><option>Option 1</option><option>Option 2</option></select>
+  </div>
+  <div class="field">
+    <label>Disabled input</label>
+    <input type="text" disabled value="Disabled value" style="background:#EDEBE9;color:#9F9D9C;border-color:#D8D8D8;cursor:not-allowed">
+  </div>
+</div>
+<div class="field-row">
+  <div class="checkbox-group field">
+    <div class="group-label" style="margin-top:0">Checkbox group</div>
+    <label><input type="checkbox" checked> Option one</label>
+    <label><input type="checkbox"> Option two</label>
+    <label><input type="checkbox" disabled> Disabled option</label>
+  </div>
+  <div class="checkbox-group field">
+    <div class="group-label" style="margin-top:0">Radio group</div>
+    <label><input type="radio" name="r" checked> Option one</label>
+    <label><input type="radio" name="r"> Option two</label>
+    <label><input type="radio" name="r" disabled> Disabled</label>
+  </div>
+</div>
+</body></html>
