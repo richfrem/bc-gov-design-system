@@ -1,0 +1,14 @@
+{
+  "skill": "bc-gov-pptx",
+  "cases": [
+    { "input": "Create a BC Government PowerPoint deck for a project briefing", "should_trigger": true },
+    { "input": "Build a slide deck with BC Gov branding", "should_trigger": true },
+    { "input": "Make a government presentation template using BC Sans colors", "should_trigger": true },
+    { "input": "Generate a BC design system PPTX", "should_trigger": true },
+    { "input": "I need a briefing deck aligned to BC Government design standards", "should_trigger": true },
+    { "input": "Create a React component for a button", "should_trigger": false },
+    { "input": "Build a BC Gov web page", "should_trigger": false },
+    { "input": "Make a Word document", "should_trigger": false },
+    { "input": "Create a PowerPoint for a tech startup", "should_trigger": false }
+  ]
+}

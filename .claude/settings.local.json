@@ -22,7 +22,16 @@
       "Read(//c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents//**)",
       "Read(//c/Users/RICHFREM/source/repos/claude-design-bc-gov-design-system/.agents/**)",
       "Bash(python3 *)",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(node generate.js)",
+      "Bash(npm init *)",
+      "Bash(pip install *)",
+      "Bash(where soffice *)",
+      "Bash(where libreoffice *)",
+      "Bash(where pdftoppm *)",
+      "Bash(grep -v \"^src/components$\")"
     ]
   }
 }

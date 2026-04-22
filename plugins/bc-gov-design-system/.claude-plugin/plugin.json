@@ -6,7 +6,7 @@
         "name": "Richard Fremmerlid"
     },
     "repository": "https://github.com/richfrem/claude-design-bc-gov-design-system",
-    "license": "MIT (plugin code); BC Sans font files © Province of British Columbia — see assets/fonts/LICENSE; BC logo © Province of British Columbia",
+    "license": "Apache-2.0",
     "upstream": "https://github.com/bcgov/design-system",
     "keywords": [
         "bc-government",
@@ -22,6 +22,9 @@
         "accessibility-compliance"
     ],
     "skills": [
-        "skills/bc-gov-design-system"
+        "skills/bc-gov-design-system",
+        "skills/bc-gov-pptx",
+        "skills/bc-gov-react",
+        "skills/bc-gov-blazor"
     ]
 }

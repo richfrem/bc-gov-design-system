@@ -168,6 +168,24 @@
       "dst": "plugins\\bc-gov-design-system\\skills\\bc-gov-design-system\\assets\\fonts\\LICENSE",
       "strategy": "symlink",
       "description": ""
+    },
+    {
+      "src": "plugins\\bc-gov-design-system\\assets\\generate.js",
+      "dst": "plugins\\bc-gov-design-system\\skills\\bc-gov-pptx\\assets\\generate.js",
+      "strategy": "symlink",
+      "description": ""
+    },
+    {
+      "src": "plugins\\bc-gov-design-system\\assets\\icons\\bc-logo.png",
+      "dst": "plugins\\bc-gov-design-system\\skills\\bc-gov-pptx\\assets\\bc-logo.png",
+      "strategy": "symlink",
+      "description": ""
+    },
+    {
+      "src": "plugins\\bc-gov-design-system\\assets\\colors_and_type.css",
+      "dst": "plugins\\bc-gov-design-system\\skills\\bc-gov-blazor\\assets\\colors_and_type.css",
+      "strategy": "symlink",
+      "description": ""
     }
   ]
 }
