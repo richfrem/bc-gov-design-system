@@ -129,7 +129,7 @@
      ───────────────────────────────────────────────── */
 
   --color-surface-white:        #FFFFFF;
-  --color-surface-default:      #FAFAF8;  /* Warm off-white — secondary surfaces */
+  --color-surface-default:      #FAF9F8;  /* Warm off-white — secondary surfaces */
   --color-surface-hover:        #EDEBE9;  /* Hover bg — tertiary/secondary elements */
   --color-surface-pressed:      #E0DEDC;  /* Pressed bg */
   --color-surface-disabled:     #EDEBE9;  /* Disabled element bg */

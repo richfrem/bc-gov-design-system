@@ -78,7 +78,7 @@ assets/
 ### Surfaces & borders
 | Token | Hex | Use |
 |---|---|---|
-| `--color-surface-default` | `#FAFAF8` | Off-white secondary sections |
+| `--color-surface-default` | `#FAF9F8` | Off-white secondary sections (official `surface.color.background.light-gray`) |
 | `--color-surface-dark` | `#252423` | Indigenous acknowledgment band |
 | `--color-border` | `#D8D8D8` | Standard 1px border |
 | `--color-border-indigenous` | `#FBD389` | Indigenous band top border |
@@ -90,6 +90,25 @@ assets/
 | `--color-success` / `--color-success-bg` | `#42814A` / `#F6FFF8` | Success states |
 | `--color-warning` / `--color-warning-bg` | `#F8BB47` / `#FEF1D8` | Warning states |
 | `--color-info` / `--color-info-bg` | `#2E5DD7` / `#D8EAFD` | Info states |
+
+### Official token names (`@bcgov/design-tokens` 5.0.0, components 0.8.1)
+
+Figma and the npm package name tokens by role (`surface.color.<family>.<state>`; CSS `--surface-color-<family>-<state>`). When a design or spec cites one, use this mapping rather than a raw hex.
+
+| Official token | Hex | Local token |
+|---|---|---|
+| `surface.color.primary.default` / `.hover` / `.pressed` / `.disabled` | `#013366` / `#1E5189` / `#01264C` / `#EDEBE9` | `--color-brand-primary` / `-hover` / `-pressed` |
+| `surface.color.secondary.default` / `.hover` / `.pressed` | `#FFFFFF` / `#EDEBE9` / `#E0DEDC` | `--color-surface-white` / `-hover` / `-pressed` |
+| `surface.color.tertiary.default` / `.hover` / `.pressed` | transparent / `#ECEAE8` / `#E0DEDC` | text-only actions |
+| `surface.color.menus.default` / `.hover` | `#FFFFFF` / `#EDEBE9` | dropdown and menu rows |
+| `surface.color.background.light-gray` / `.dark-blue` | `#FAF9F8` / `#053662` | `--color-surface-default` / `--color-brand-primary-dark` |
+| `theme.gold.60` / `theme.gold.100` | `#FBD389` / `#FCBA19` | `--color-border-indigenous` (gold line) |
+
+The package defines no focus-ring token; keep `--color-brand-focus` (`#2E5DD7`) and a visible outline. In these examples the "active" token is the element's stroke, not its fill.
+
+### Navigation
+
+The design system's **Menu** is an action/option list (rows, section headers, dividers, danger item, optional icons, small/medium size), such as a row's "⋮" menu, not site navigation. There is no ready-made mega-menu. For a site-wide navigation bar, build it from the header pattern and the primary surface tokens above, and reuse the Menu styling (white card, shadow, `menus.hover` rows, dividers) only for the dropdown panel. Keep full keyboard support, a visible focus ring and WCAG 2.1 AA contrast.
 
 ---
 
