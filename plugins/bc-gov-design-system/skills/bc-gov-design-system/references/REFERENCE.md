@@ -269,13 +269,13 @@ BC Sans font files (6 weights × woff + woff2):
 
 ### Callout
 ```html
-<div role="note" style="background:#D8EAFD;border-left:4px solid #013366;border-radius:0 4px 4px 0;padding:16px 20px;display:flex;gap:12px;margin-bottom:16px;">
-  <i class="fa-solid fa-circle-info" style="color:#013366;font-size:16px;flex-shrink:0;margin-top:2px;" aria-hidden="true"></i>
-  <div style="font-size:14px;color:#474543;line-height:1.6;">
-    <strong style="color:#2D2D2D;">Before you begin:</strong> You will need your Business Number and proof of insurance.
-  </div>
+<!-- Matches @bcgov/design-system-react-components Callout.css, lightBlue theme. Default (lightGrey) uses background #FAF9F8. -->
+<div role="note" style="background:#F1F8FE;border-left:4px solid #013366;border-radius:4px 0 0 4px;padding:1rem 1.5rem;margin-bottom:1rem;">
+  <div style="font-weight:700;font-size:1.125rem;line-height:1.913rem;color:#2D2D2D;margin-bottom:0.5rem;">Before you begin</div>
+  <div style="font-size:1rem;line-height:1.688rem;color:#474543;">You will need your Business Number and proof of insurance.</div>
 </div>
 ```
+Callout vs Alert: a Callout (light grey/blue/gold, 4px left border, left-only radius) highlights neutral supporting content. An Alert (status colours, full 1px border, 4px radius) signals a state: info, success, warning, danger. Use the Callout for "Training materials" style boxes and the Alert for "IMPORTANT NOTICE" style warnings. See `inline-style-hosts.md`.
 
 ### Breadcrumb
 ```html
