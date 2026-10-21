@@ -245,6 +245,9 @@ Use `role="alert"` for errors/warnings, `role="status"` for info/success.
 </footer>
 ```
 
+### Hosts without CSS variables (SharePoint text parts, CMS rich text)
+Read `references/inline-style-hosts.md`. Clone `bcgov/design-system` into a gitignored folder (for example `temp/repos/design-system`) and resolve component CSS against `packages/design-tokens/build/css/variables.css` instead of guessing values.
+
 ### See `references/REFERENCE.md` for full patterns:
 Card, Accordion, Data table, Dialog/modal, Progress bar, Toggle/switch, Callout, Breadcrumb, Hero section, Header with subheader.
 
