@@ -9,10 +9,9 @@ apm.yml                                  package manifest
 .apm/skills/bc-gov-design-system/
   SKILL.md                               router (picks the mode)
   references/modes/{core,react,blazor,pptx,sharepoint}.md
-  references/                            token and component references, acceptance criteria
-  assets/                                colors_and_type.css, BC Sans fonts, logo, generate.js
+  references/                            token and component references, brand foundations, acceptance criteria
+  assets/                                colors_and_type.css, BC Sans fonts, logo, generate.js, examples/ (UI kit, previews)
   evals/evals.json                       trigger evals
-bc-design-system/                        Claude Design export (previews, UI kit); reference only
 ```
 
 All files are real files (no symlinks). Edit sources under `.apm/` and reinstall; never edit deployed copies in `.agents/`, `.claude/` or similar.

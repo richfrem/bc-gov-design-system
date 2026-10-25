@@ -1,7 +1,7 @@
 # BC Government Design System — Full Reference
 
 **Version:** v0.7.0 (Component Library) / v3.2.0 (Design Tokens)  
-**Source:** `bc-design-system/` (Claude Design export)  
+**Source:** B.C. Design System (Claude Design export, since removed; see [brand-foundations.md](brand-foundations.md))  
 **Token file:** `../assets/colors_and_type.css`
 
 ## Contents

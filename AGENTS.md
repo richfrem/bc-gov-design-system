@@ -7,7 +7,7 @@ APM package that ships one skill, `bc-gov-design-system`, for building B.C. Gove
 ## Layout
 
 - Package manifest: `apm.yml`. Skill: `.apm/skills/bc-gov-design-system/` (router `SKILL.md`, `references/modes/`, `assets/`, `evals/`).
-- `bc-design-system/` is the Claude Design export, reference only; the skill does not depend on it.
+- Skill: `.apm/skills/bc-gov-design-system/` (router `SKILL.md`, `references/modes/`, `assets/` including `examples/`, `evals/`).
 
 ## Core Commands
 
