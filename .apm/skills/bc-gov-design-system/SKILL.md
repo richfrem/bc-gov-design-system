@@ -2,7 +2,7 @@
 name: bc-gov-design-system
 description: >
   Use when building any B.C. Government digital product, UI, or deck with the official
-  design system (tokens v5, components v0.7). Triggers: BC Gov branding, government website,
+  design system (tokens v5, components v0.8). Triggers: BC Gov branding, government website,
   BC Sans font, BC color palette, government forms, WCAG 2.1 AA government UI, Indigenous
   acknowledgment footer, @bcgov/design-system-react-components, BC Gov React or Next.js app,
   BC Gov Blazor or Razor component, BC Gov PowerPoint or slide deck, BC design system PPTX,
@@ -57,6 +57,7 @@ If the target is unclear, ask which technology; if it is plain HTML or unspecifi
 ## Bundled files
 
 - `assets/colors_and_type.css`: canonical token file (copy into the project; use absolute font URLs).
+- `assets/design-tokens.css`: verbatim upstream generated tokens (`@bcgov/design-tokens` 5.0.0); see [upstream-sources.md](references/upstream-sources.md).
 - `assets/fonts/`: BC Sans `.woff2`/`.woff` and `LICENSE`.
 - `assets/icons/bc-logo.png`: official wordmark.
 - `assets/generate.js`: reference PPTX generator (`pptx` mode).
@@ -69,6 +70,6 @@ Check the output against the mode's acceptance file before reporting done: [desi
 ## References
 
 - Modes: [core](references/modes/core.md) • [react](references/modes/react.md) • [blazor](references/modes/blazor.md) • [pptx](references/modes/pptx.md) • [sharepoint](references/modes/sharepoint.md)
-- Detail: [core-reference.md](references/core-reference.md) • [react-reference.md](references/react-reference.md) • [brand-foundations.md](references/brand-foundations.md) • [inline-style-hosts.md](references/inline-style-hosts.md)
+- Detail: [core-reference.md](references/core-reference.md) • [react-reference.md](references/react-reference.md) • [brand-foundations.md](references/brand-foundations.md) • [inline-style-hosts.md](references/inline-style-hosts.md) • [upstream-sources.md](references/upstream-sources.md)
 
-Upstream: <https://github.com/bcgov/design-system>. BC Sans is © Province of British Columbia (see `assets/fonts/LICENSE`).
+Upstream: <https://www2.gov.bc.ca/gov/content/digital/design-system> • [components](https://www2.gov.bc.ca/gov/content/digital/design-system/components) • [design tokens](https://www2.gov.bc.ca/gov/content/digital/design-system/foundations/design-tokens) • <https://github.com/bcgov/design-system>. BC Sans is © Province of British Columbia (see `assets/fonts/LICENSE`).

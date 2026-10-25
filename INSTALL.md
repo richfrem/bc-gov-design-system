@@ -32,7 +32,7 @@ Makes the skill available in every project.
 
 ```bash
 # From GitHub, pinned to a tag or commit
-apm install richfrem/claude-design-bc-gov-design-system#<tag-or-sha> --global --target claude,copilot,codex,antigravity
+apm install richfrem/bc-gov-design-system#<tag-or-sha> --global --target claude,copilot,codex,antigravity
 
 # From a local clone
 apm install /path/to/claude-design-bc-gov-design-system --global --target claude,copilot,codex,antigravity
@@ -51,7 +51,7 @@ Antigravity (agy) skills:    ~/.gemini/antigravity-cli/skills/bc-gov-design-syst
 
 ```bash
 cd <path-to-consumer-repo>
-apm install richfrem/claude-design-bc-gov-design-system#<tag-or-sha> --target claude,copilot,codex,antigravity
+apm install richfrem/bc-gov-design-system#<tag-or-sha> --target claude,copilot,codex,antigravity
 ```
 
 This writes `apm.yml` and `apm.lock.yaml` in the project and deploys the skill to the harness folders (`.claude/skills/`, `.agents/skills/`). Commit the manifest and lockfile; git-ignore the deployed folders.
@@ -60,8 +60,8 @@ This writes `apm.yml` and `apm.lock.yaml` in the project and deploys the skill t
 
 ```bash
 apm list                                              # installed packages
-apm update richfrem/claude-design-bc-gov-design-system  # update to the latest ref
-apm uninstall richfrem/claude-design-bc-gov-design-system --global
+apm update richfrem/bc-gov-design-system  # update to the latest ref
+apm uninstall richfrem/bc-gov-design-system --global
 ```
 
 ## Use

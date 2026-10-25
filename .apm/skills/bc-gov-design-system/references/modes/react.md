@@ -1,6 +1,6 @@
 # React mode
 
-You are building React UI using the official **B.C. Government Design System React component library** (`@bcgov/design-system-react-components` v0.7.0).
+You are building React UI using the official **B.C. Government Design System React component library** (`@bcgov/design-system-react-components` v0.8.1).
 
 Full component patterns are in `references/react-reference.md`.
 
@@ -20,16 +20,26 @@ Full component patterns are in `references/react-reference.md`.
 npm install @bcgov/design-system-react-components @bcgov/bc-sans
 ```
 
-### Global CSS (add once to your app entry point)
+The package is on npm and GitHub Packages. Component CSS is bundled with the components; only the font needs importing.
+
+### BC Sans (add once to your app entry point)
 
 ```tsx
 // app entry — e.g. main.tsx, _app.tsx, layout.tsx
-import '@bcgov/design-system-react-components/dist/styles.css';
-import '@bcgov/bc-sans/css/BCSans.css';
+import '@bcgov/bc-sans/css/BC_Sans.css';
 ```
 
-> **Next.js App Router:** import both in `app/layout.tsx` inside the root layout.
+> **Next.js App Router:** import in `app/layout.tsx` inside the root layout.
 > **Vite/CRA:** import in `main.tsx` or `index.tsx`.
+
+### Upstream agent rules (from the library's own `AGENTS.md`)
+
+- Use the library API, not ad hoc markup; do not override `className` on design system components.
+- Prop types in `dist/index.d.ts` are authoritative: if a prop is not in the types, it does not exist.
+- Wrap inputs in `Form`.
+- For icons beyond the bundled set, use Font Awesome Free v7 (`@fortawesome/react-fontawesome` 3.5.0 or later).
+- Check `@bcgov/bc-sans` is installed and its CSS is imported; warn the user if not.
+- Upstream guidance for your project's `AGENTS.md`: [AGENTS.example.md](https://github.com/bcgov/design-system/blob/main/AGENTS.example.md).
 
 ---
 
@@ -310,7 +320,7 @@ import {
 
 ## Non-negotiable rules
 
-1. **Always import the CSS** — components are unstyled without `dist/styles.css`
+1. **Import the BC Sans CSS** (`@bcgov/bc-sans/css/BC_Sans.css`) — component CSS ships with the package, the font does not
 2. **Use `isRequired` not HTML `required`** — React Aria manages ARIA attributes
 3. **Use `isInvalid` + `errorMessage`** — never roll custom error rendering alongside these components
 4. **Use `onPress` not `onClick`** for Button — React Aria normalizes pointer/keyboard events

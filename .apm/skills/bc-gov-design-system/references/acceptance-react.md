@@ -3,8 +3,8 @@
 ## Setup
 - [ ] `@bcgov/design-system-react-components` installed
 - [ ] `@bcgov/bc-sans` installed
-- [ ] `dist/styles.css` imported in app entry point
-- [ ] `BCSans.css` imported in app entry point
+- [ ] `@bcgov/bc-sans/css/BC_Sans.css` imported in app entry point
+- [ ] No `className` overrides on design system components; props exist in `dist/index.d.ts`
 
 ## Component usage
 - [ ] All components imported from package root (not deep paths)

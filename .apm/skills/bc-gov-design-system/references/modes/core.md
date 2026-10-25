@@ -1,6 +1,6 @@
 # Core mode (HTML/CSS tokens and components)
 
-You are now operating as an expert in the **B.C. Government Design System** (v0.7.0 components / v3.2.0 tokens).
+You are now operating as an expert in the **B.C. Government Design System** (v0.8.1 components / v5.0.0 tokens).
 
 The complete token reference is in `references/core-reference.md`. The canonical CSS token file is in `assets/colors_and_type.css`.
 
@@ -115,7 +115,7 @@ The design system's **Menu** is an action/option list (rows, section headers, di
 - **Primary font:** `'BC Sans', 'Noto Sans', sans-serif` — mandatory, never substitute with Inter or system fonts
 - **Secondary font:** `'Roboto', sans-serif` — labels, tags, small UI text only
 - **Type scale:** 12px (label) → 14px (body-sm) → 16px (body) → 18px (body-lg/h6) → 20px (h5) → 24px (h4) → 28px (h3) → 32px (h2) → 36px (h1) → 48px (display)
-- **Body line-height:** 27px (16px text), headings 1.1, display 1.0
+- **Body line-height:** 27px (16px text), headings 1.5 ratio (h1 54px, h2/h3 48px, h4 36px, h5 34px, h6 ~31px), display normal
 - **Weights:** 400 (regular), 700 (bold) — light (300) for display use only
 
 Font-face declarations (adjust path to your project's font location):
@@ -137,7 +137,7 @@ Common: `--space-2` 8px, `--space-4` 16px, `--space-5` 24px, `--space-6` 32px, `
 
 **Border radius:** `--radius-sm` 4px (buttons/inputs/cards), `--radius-full` 999px (pills)
 
-**Shadows:** `--shadow-md: 0 1px 4px rgba(0,0,0,0.13), 0 1px 2px rgba(0,0,0,0.10)` — cards and dialogs only
+**Shadows:** `--shadow-md: 0 1.2px 3.6px 0 #0000001a, 0 6.4px 14.4px 0 #00000021` (upstream `surface.shadow.medium`) — cards and dialogs only; full set in `assets/design-tokens.css`
 
 **Focus ring (apply to all interactive elements):**
 ```css

@@ -15,7 +15,7 @@ Voice, layout and behaviour rules from the B.C. Design System that complement th
 
 The B.C. Design System gives design and development teams building blocks for intuitive, accessible digital services for the Government of British Columbia. It is maintained by Government Communications & Public Engagement (GCPE); contact designsystem@gov.bc.ca.
 
-Version: components v0.7.0, tokens v3.2.0 (the export; the upstream repo carries tokens 5.x). It covers design tokens (colour, type, spacing, elevation), reusable components, the BC Sans typeface (mandatory), Font Awesome 6 Pro icons and the official BC logo.
+Version: components v0.8.1, tokens v5.0.0 (checked against the upstream repo; see [upstream-sources.md](upstream-sources.md)). It covers design tokens (colour, type, spacing, elevation), reusable components, the BC Sans typeface (mandatory), Font Awesome 6 Pro icons and the official BC logo.
 
 ## Content fundamentals
 
@@ -54,7 +54,7 @@ Version: components v0.7.0, tokens v3.2.0 (the export; the upstream repo carries
 
 - Mostly white or off-white. No gradients; no decorative background images (images are content only). Section dividers are 1px `#D8D8D8` rules.
 - Radius 4px for buttons and containers. Focus-ring radius is the element radius plus 2px (6px on buttons).
-- Standard border `1px solid #D8D8D8`. Shadow only subtle: `0 1px 4px rgba(0,0,0,0.13), 0 1px 2px rgba(0,0,0,0.1)` on cards and dialogs; never heavy drop shadows.
+- Standard border `1px solid #D8D8D8`. Shadow only subtle: `--shadow-md` (`0 1.2px 3.6px 0 #0000001a, 0 6.4px 14.4px 0 #00000021`) on cards and dialogs; never heavy drop shadows.
 - Cards: white, 1px `#D8D8D8` border, 4px radius, 16px padding, underlined text links for titles.
 
 ### States and motion

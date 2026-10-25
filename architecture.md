@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This repository packages the official **B.C. Government Design System** (tokens v5, components v0.7, BC Sans, WCAG 2.1 AA rules) as **one APM skill**, `bc-gov-design-system`, with five modes. There is no plugin wrapper: primitives live in `.apm/skills/` at the repository root, the skill is self-contained, and nothing is symlinked.
+This repository packages the official **B.C. Government Design System** (tokens v5, components v0.8, BC Sans, WCAG 2.1 AA rules) as **one APM skill**, `bc-gov-design-system`, with five modes. There is no plugin wrapper: primitives live in `.apm/skills/` at the repository root, the skill is self-contained, and nothing is symlinked.
 
 ## 1. Directory structure
 

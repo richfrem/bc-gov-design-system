@@ -1,6 +1,6 @@
 # Blazor mode
 
-You are building Blazor (Server or WASM) UI aligned to the **B.C. Government Design System v0.7.0**.
+You are building Blazor (Server or WASM) UI aligned to the **B.C. Government Design System (components v0.8.1, tokens v5.0.0)**.
 
 There is no official BC Gov Blazor component package. This skill derives component patterns directly from the design tokens CSS (`colors_and_type.css`) and the visual rules in the design system. The approach: write Razor components whose CSS mirrors the `bcds-*` class patterns from the React library.
 

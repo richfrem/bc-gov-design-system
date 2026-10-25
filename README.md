@@ -2,6 +2,8 @@
 
 An [APM](https://github.com/microsoft/apm) package exposing the official B.C. Government Design System (tokens v5, BC Sans, component patterns, WCAG 2.1 AA rules) as one agent skill, `bc-gov-design-system`, with five modes: `core` (HTML/CSS), `react`, `blazor`, `pptx` and `sharepoint`.
 
+**Currency:** aligned with the current upstream B.C. Design System as of 2026-10-25: `@bcgov/design-system-react-components` 0.8.1, `@bcgov/design-tokens` 5.0.0 (upstream commit `020bd78`). See [upstream-sources.md](.apm/skills/bc-gov-design-system/references/upstream-sources.md) for sources and the refresh procedure.
+
 ## Layout
 
 ```
@@ -28,7 +30,7 @@ Global, for every project on the workstation (use the local path while developin
 # From a local clone
 apm install --global /path/to/claude-design-bc-gov-design-system
 # From GitHub, pinned to a tag or commit
-apm install --global richfrem/claude-design-bc-gov-design-system#<tag-or-sha>
+apm install --global richfrem/bc-gov-design-system#<tag-or-sha>
 ```
 
 Project-local: run the same command without `--global` inside the project, and git-ignore the deployed folders (`.agents/`, `.claude/`, `.codex/`, `.github/agents/`, `apm_modules/`).
