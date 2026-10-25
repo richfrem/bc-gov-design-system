@@ -1,6 +1,6 @@
 # BC Government React Components — Full Reference
 
-Package: `@bcgov/design-system-react-components` v0.7.0  
+Package: `@bcgov/design-system-react-components` v0.8.1 (see [upstream-sources.md](upstream-sources.md))  
 Source: https://github.com/bcgov/design-system/tree/main/packages/react-components
 
 ## Contents
@@ -21,7 +21,7 @@ Source: https://github.com/bcgov/design-system/tree/main/packages/react-componen
 | Component | Import | Notes |
 |---|---|---|
 | Accordion | `Accordion, AccordionGroup` | Collapsible content panels |
-| AlertBanner | `AlertBanner` | Page-level alert — info/success/warning/danger/black |
+| AlertBanner | `AlertBanner` | Page-level alert — info/success/warning/danger/black; `size` small/medium, `layout` fixed/fluid (0.8.0) |
 | AlertDialog | `AlertDialog` | Accessible alert dialog (blocking) |
 | Button | `Button` | primary/secondary/tertiary/link + danger flag |
 | ButtonGroup | `ButtonGroup` | Wraps multiple buttons |
@@ -41,10 +41,12 @@ Source: https://github.com/bcgov/design-system/tree/main/packages/react-componen
 | ProgressBar | `ProgressBar` | Linear progress indicator |
 | ProgressCircle | `ProgressCircle` | Circular spinner/progress |
 | Radio | `Radio, RadioGroup` | Single or grouped radio buttons |
-| Select | `Select` | Accessible dropdown (flat or sectioned) |
+| Menu | `Menu, MenuTrigger, MenuItem, MenuSection, MenuSectionHeader, SubmenuTrigger` | Dropdown of actions/links. `<MenuTrigger><Button/><Menu items\|sections\|children/></MenuTrigger>`; `itemSize` small/medium, `placement`; MenuItem has `label`, `description`, `size`, `iconLeft` |
+| Select | `Select` | Accessible dropdown (flat or sectioned); `selectionMode="multiple"` supported (0.8.0) |
 | Separator | `Separator` | Horizontal rule / divider |
+| Subheader | `Subheader` | Nav container of links/menus/buttons beside `Header`; auto Separators; `size` small/medium; set `ariaLabel` next to other nav landmarks |
 | Switch | `Switch` | Toggle on/off |
-| Tag | `Tag, TagGroup, TagList` | Status tags, filterable |
+| Tag | `Tag, TagGroup, TagList` | Status tags, filterable; `size` xsmall/small/medium (xsmall 0.8.0) |
 | Text | `Text` | Styled text block |
 | TextArea | `TextArea` | Multi-line text input |
 | TextField | `TextField` | Single-line text input |
@@ -58,8 +60,7 @@ Source: https://github.com/bcgov/design-system/tree/main/packages/react-componen
 
 ```tsx
 // app/layout.tsx
-import '@bcgov/design-system-react-components/dist/styles.css';
-import '@bcgov/bc-sans/css/BCSans.css';
+import '@bcgov/bc-sans/css/BC_Sans.css';
 import { Header, Footer, FooterLinks } from '@bcgov/design-system-react-components';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

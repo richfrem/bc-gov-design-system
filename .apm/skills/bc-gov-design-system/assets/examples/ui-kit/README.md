@@ -36,4 +36,4 @@ All colors, typography and spacing come from `../../colors_and_type.css` (or inl
 
 ## Font note
 
-Uses **Noto Sans** as a substitute for **BC Sans** (government-proprietary). Replace with actual BC Sans files from GCPE when available.
+Uses **BC Sans** from `../../fonts/` with Noto Sans as the fallback in the font stack.

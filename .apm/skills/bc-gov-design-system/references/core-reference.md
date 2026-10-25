@@ -1,7 +1,7 @@
 # BC Government Design System — Full Reference
 
-**Version:** v0.7.0 (Component Library) / v3.2.0 (Design Tokens)  
-**Source:** `bc-design-system/` (Claude Design export)  
+**Version:** v0.8.1 (Component Library) / v5.0.0 (Design Tokens)  
+**Source:** B.C. Design System (Claude Design export, since removed; see [brand-foundations.md](brand-foundations.md))  
 **Token file:** `../assets/colors_and_type.css`
 
 ## Contents
@@ -87,7 +87,7 @@
 --text-body-sm:  14px;  --lh-body-sm: 21px;
 --text-body:     16px;  --lh-body:    27px;
 --text-body-lg:  18px;  --lh-body-lg: 30.6px;
---text-h6:       18px;  --lh-heading: 1.1;
+--text-h6:       18px;  --lh-h6: 30.6px;  /* headings: h1 54px, h2/h3 48px, h4 36px, h5 34px (upstream 1.5 ratio) */
 --text-h5:       20px;
 --text-h4:       24px;
 --text-h3:       28px;
@@ -122,8 +122,10 @@ BC Sans font files (6 weights × woff + woff2):
 --radius-lg:   24px;   /* doc frames */
 --radius-full: 999px;  /* pills */
 
---shadow-sm: 0 1px 2px rgba(0,0,0,0.10);
---shadow-md: 0 1px 4px rgba(0,0,0,0.13), 0 1px 2px rgba(0,0,0,0.10);
+--shadow-default: 0 0.3px 0.9px 0 #0000001a, 0 1.6px 3.6px 0 #00000021;
+--shadow-sm: 0 0.6px 1.8px 0 #0000001a, 0 3.2px 7.2px 0 #00000021;
+--shadow-md: 0 1.2px 3.6px 0 #0000001a, 0 6.4px 14.4px 0 #00000021;
+--shadow-lg: 0 4.8px 14.4px 0 #0000002e, 0 25.6px 57.6px 0 #00000038;
 
 --focus-ring: 0 0 0 2px #FFFFFF, 0 0 0 4px #2E5DD7;
 --focus-ring-offset: 2px;

@@ -1,6 +1,6 @@
 # PowerPoint mode
 
-You are creating a PowerPoint presentation aligned to the **B.C. Government Design System v0.7.0**.
+You are creating a PowerPoint presentation aligned to the **B.C. Government Design System (components v0.8.1, tokens v5.0.0)**.
 
 The reference generator is at `assets/generate.js`. The canonical token reference is in `references/core-reference.md`.
 

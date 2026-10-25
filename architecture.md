@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This repository packages the official **B.C. Government Design System** (tokens v5, components v0.7, BC Sans, WCAG 2.1 AA rules) as **one APM skill**, `bc-gov-design-system`, with five modes. There is no plugin wrapper: primitives live in `.apm/skills/` at the repository root, the skill is self-contained, and nothing is symlinked.
+This repository packages the official **B.C. Government Design System** (tokens v5, components v0.8, BC Sans, WCAG 2.1 AA rules) as **one APM skill**, `bc-gov-design-system`, with five modes. There is no plugin wrapper: primitives live in `.apm/skills/` at the repository root, the skill is self-contained, and nothing is symlinked.
 
 ## 1. Directory structure
 
@@ -14,10 +14,10 @@ claude-design-bc-gov-design-system/
 │   │   ├── core-reference.md                 # Full token and component patterns
 │   │   ├── react-reference.md                # React component patterns
 │   │   ├── inline-style-hosts.md             # Hosts that strip <style> (SharePoint, CMS, email)
+│   │   ├── brand-foundations.md              # Voice, layout, state and motion rules
 │   │   └── acceptance-<mode>.md              # Per-mode acceptance criteria
-│   ├── assets/                               # colors_and_type.css, BC Sans fonts, logo, generate.js
+│   ├── assets/                               # colors_and_type.css, BC Sans fonts, logo, generate.js, examples/ (UI kit, previews)
 │   └── evals/evals.json                      # Trigger evals (root array, should_trigger)
-├── bc-design-system/                         # Claude Design export (previews, UI kit); reference only
 ├── README.md
 ├── INSTALL.md                                # Global and project-local APM install
 ├── architecture.md                           # This overview

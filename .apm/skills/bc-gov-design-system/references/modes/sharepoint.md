@@ -12,7 +12,7 @@ Apply the design system to SharePoint Online content. Three routes; pick by page
 
 A text web part sanitises HTML: no `<link>`, no persistent `<style>`, no custom fonts, no `var(--token)`. Therefore:
 
-1. Inline resolved token values as `style` attributes: font stack `'BC Sans','Noto Sans',sans-serif`, body `#2D2D2D` 16px/27px, links `#255A90` underlined, headings navy `#013366` weight 700 at 36/32/28/24/20/18px with line height 1.1.
+1. Inline resolved token values as `style` attributes: font stack `'BC Sans','Noto Sans',sans-serif`, body `#2D2D2D` 16px/27px, links `#255A90` underlined, headings navy `#013366` weight 700 at 36/32/28/24/20/18px with line height 1.5 (54/48/48/36/34/31px).
 2. Strip legacy `font-family`, `font-size` and layout styles first so they do not fight the tokens.
 3. Keep the transform idempotent: a second run must not change the output.
 4. Do not change alt text, link targets, table structure or image placement.
