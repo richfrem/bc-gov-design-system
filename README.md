@@ -22,18 +22,21 @@ All files are real files (no symlinks). Edit sources under `.apm/` and reinstall
 
 Full instructions (global, project-local, update, remove) are in [INSTALL.md](INSTALL.md); layout and design decisions are in [architecture.md](architecture.md); agent rules are in [AGENTS.md](AGENTS.md).
 
-Requires APM (`apm --version`; pinned `apm-cli==0.33.0`).
+Requires APM 0.35.0 or newer (`apm --version`).
 
-Global, for every project on the workstation (use the local path while developing, or a pinned GitHub ref once pushed):
+Global, for every project on the workstation. Clone the repository and install from the clone with its absolute path (relative paths such as `.` are rejected):
 
-```bash
-# From a local clone
-apm install --global /path/to/claude-design-bc-gov-design-system
-# From GitHub, pinned to a tag or commit
-apm install --global richfrem/bc-gov-design-system#<tag-or-sha>
+```powershell
+# Windows (PowerShell), from the clone
+apm install "$PWD" --global --target claude,copilot,codex,agy --parallel-downloads 0
 ```
 
-Project-local: run the same command without `--global` inside the project, and git-ignore the deployed folders (`.agents/`, `.claude/`, `.codex/`, `.github/agents/`, `apm_modules/`).
+```bash
+# macOS / Linux, from the clone
+apm install "$PWD" --global --target claude,copilot,codex,agy
+```
+
+Project-local: run `apm install <path-to-clone> --target claude,copilot,codex,agy` inside the project, and git-ignore the deployed folders (`.agents/`, `.claude/`, `.codex/`, `.github/agents/`, `apm_modules/`).
 
 Verify the skill appears under `~/.agents/skills/bc-gov-design-system/` (global) or the project's harness folder.
 
