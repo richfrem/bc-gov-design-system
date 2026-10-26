@@ -13,7 +13,7 @@ APM package that ships one skill, `bc-gov-design-system`, for building B.C. Gove
 
 - Validate the package: `python3 <path-to-packaging-with-apm>/scripts/validate_apm_package.py --path .`
 - Audit the skill: `python3 <path-to-authoring-skills>/scripts/audit_skill.py .apm/skills/bc-gov-design-system --mode source` (and `--mode installed`).
-- Test an install: `apm install . --global --target claude,copilot,codex,antigravity`.
+- Test an install (from the clone; global installs need an absolute path): `apm install "$PWD" --global --target claude,copilot,codex,agy` (add `--parallel-downloads 0` on Windows).
 
 ## Rules
 
