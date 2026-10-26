@@ -4,6 +4,19 @@ How to install, update and remove the **BC Government Design System** skill (`bc
 
 The repository is an [APM](https://github.com/microsoft/apm) (Agent Package Manager) package: `apm.yml` and `.apm/skills/` sit at the repository root. Everything APM installs is committed to git, so there is no build or copy step. Clone the repository and run `apm install` on the clone. This works the same on Windows, macOS and Linux.
 
+## Dependencies and install order
+
+This is a **level 1** package.
+
+- **Needs installed first:** nothing. `apm.yml` has `dependencies: {}`.
+- **Needed by:** `sharepoint-workbench` (level 2) and the `sp-migration` plugin in CSB-Intranet (level 3). Install this package before them.
+- **Scope:** install it **globally** (section 3). A global install is recorded in `~/.apm/apm.yml`, not in this repo's `apm.yml`.
+- **One scope only:** if it is installed globally, don't also list it in another project's `apm.yml`, or it is installed twice. Check what is already global first:
+
+```bash
+apm deps list --global
+```
+
 ## 1. Install the APM CLI
 
 Use APM 0.35.0 or newer; the `agy` (Antigravity) target needs it.
@@ -65,9 +78,9 @@ Antigravity (agy) skills:    ~/.gemini/antigravity-cli/skills/bc-gov-design-syst
 
 Global (user-scope) support differs by harness: `claude` supports every primitive; `copilot`, `codex` and `agy` support skills but only some other primitives. This package is a single skill, so all four harnesses get it.
 
-### Project-local (consumer repositories)
+### Project-local (alternative, only if it is not installed globally)
 
-To install into one project, run from that project's root and point at your clone:
+To install into one project, run from that project's root and point at your clone. Skip this if the package is already global (see "Dependencies and install order"):
 
 ```bash
 cd <path-to-consumer-repo>
